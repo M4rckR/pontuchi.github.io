@@ -131,6 +131,10 @@ h3, p, a{
     font-family: var(--parrafos);
 }
 
+.btn-verde:hover {
+    background-color: rgb(125, 78, 8);
+}
+
 
 
 .contenedor-navegacion{

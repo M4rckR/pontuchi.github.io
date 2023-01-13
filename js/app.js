@@ -115,3 +115,4 @@ const limpiarHtml = (contenedor) => {
         contenedor.removeChild(contenedor.firstChild);
     }
 }
+
