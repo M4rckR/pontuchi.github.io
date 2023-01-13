@@ -371,6 +371,7 @@ video{
 .precio {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .precio p {
@@ -384,5 +385,5 @@ video{
     border: none;
     background-color: var(--rojo);
     color: var(--blanco);
-    font-family: var(--parrafos);
+    height: 3.8rem;
 }
