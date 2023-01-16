@@ -131,6 +131,10 @@ h3, p, a{
     font-family: var(--parrafos);
 }
 
+.btn-verde:hover {
+    background-color: rgb(125, 78, 8);
+}
+
 
 
 .contenedor-navegacion{
@@ -367,6 +371,7 @@ video{
 .precio {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .precio p {
@@ -380,5 +385,95 @@ video{
     border: none;
     background-color: var(--rojo);
     color: var(--blanco);
-    font-family: var(--parrafos);
+    height: 3.8rem;
+}
+
+.separador {
+    background-image: url('../assets/img/ensalada.webp');
+    background-size: cover;
+    background-position:  center center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 2;
+    margin: 4rem 0;
+}
+
+.separador::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: -1;
+}
+
+.contenido-separador {
+    padding: 5rem;
+}
+
+.contenido-separador h2 {
+    font-size: 4rem;
+    color: var(--blanco);
+    text-align: center;
+}
+
+@media(min-width: 768px) {
+    .contenido-separador h2 {
+        text-align: left;
+        font-size: 5rem;
+        color: var(--blanco);
+    }
+}
+
+.contenido-separador p {
+    font-size: 3rem;
+    color: var(--blanco);
+    text-align: center;
+}
+
+@media(min-width: 768px) {
+    .contenido-separador p {
+        font-size: 3rem;
+        color: var(--blanco);
+        text-align: left;
+    }
+}
+
+
+/* seccion del chef */
+
+.chef {
+    margin-bottom: 3rem;
+}
+
+
+
+.chef h2 {
+    background-color: var(--rojo);
+    display: inline-block;
+    padding: 1rem 3rem;
+    color: var(--blanco);
+    font-size: 4rem;
+}
+
+
+@media(min-width: 768px) {
+    .contenido-chef {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.texto-chef, .imagen-chef {
+    flex: 0 0 calc(50% - 1rem);
+}
+
+.texto-chef h3 {
+    font-size: 3rem;
+}
+
+.texto-chef p {
+    font-size: 2rem;
 }
