@@ -191,8 +191,6 @@ h3, p, a{
     padding: 3rem 4rem;
     background-color: var(--oscuro);
     animation: desplazamiento .5s ease-in-out;
-    display: flex;
-    flex-direction: column;
 }
 
 .hamburguesa{
