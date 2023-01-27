@@ -296,6 +296,7 @@ video{
 .imagenes-nosotros{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .imagenes-nosotros img{
