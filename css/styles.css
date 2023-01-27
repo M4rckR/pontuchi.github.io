@@ -136,6 +136,8 @@ h3, p, a{
     background-color: rgb(78, 132, 139);
 }
 
+
+
 .contenedor-navegacion{
     background-color: var(--oscuro);
     position: relative;
@@ -189,6 +191,8 @@ h3, p, a{
     padding: 3rem 4rem;
     background-color: var(--oscuro);
     animation: desplazamiento .5s ease-in-out;
+    display: flex;
+    flex-direction: column;
 }
 
 .hamburguesa{
