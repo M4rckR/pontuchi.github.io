@@ -12,7 +12,7 @@
     <link rel="icon" href="assets/icon/icon.png">
 </head>
 <body>
-    <header class="encabezado">
+    <header class="encabezado" id="inicio">
         <div class="contenedor-navegacion">
             <div class="menu-fixed">
                 <div class="contenido-navegacion contenedor">
@@ -23,11 +23,11 @@
     
                     <nav class="navegacion ocultar">
                         <a href="#">Iniciar Sesión</a>
-                        <a href="#">Inicio</a>
-                        <a href="#">Sobre Nosotros</a>
-                        <a href="#">Menú</a>
-                        <a href="#">Chef</a>
-                        <a href="#">Contacto</a>
+                        <a href="#inicio">Inicio</a>
+                        <a href="#nosotros">Sobre Nosotros</a>
+                        <a href="#menu">Menú</a>
+                        <a href="#chef">Chef</a>
+                        <a href="#contacto">Contacto</a>
     
     
                     </nav>
@@ -57,7 +57,7 @@
         </div>
     </header>
 
-    <div class="contenedor-nosotros contenedor">
+    <div class="contenedor-nosotros contenedor" id="nosotros">
         <div class="texto-nosotros">
             <p class="bienvenido">Bienvenido</p>
             <h1>Chifa Pon Tu</h1>
@@ -69,7 +69,7 @@
                 a nivel de Comas; por la misma razón llegan clientes en abundancia día tras día de diferentes 
                 lugares de la capital a degustar su inigualable sazón.</p>
 
-            <a href="#" class="btn btn-rojo">Contactar</a>
+            <a href="html/nosotros.html" class="btn btn-rojo">Saber mas</a>
         </div>
         <div class="imagenes-nosotros">
             <div class="imagen1">
@@ -82,7 +82,7 @@
         </div>
     </div>
 
-    <section class="menu contenedor">
+    <section class="menu contenedor" id="menu">
         <h2 class="texto-platillos">Platillos Principales</h2>
         <!-- <div class="botones-platillos">
             <button class="todos btn btn-azul">Todos</button>   cambio 
@@ -238,7 +238,7 @@
         </div>
     </div>
 
-    <section class="chef contenedor">
+    <section class="chef contenedor" id="chef">
        <h2>  Chef Principal  </h2>
         <div class="contenido-chef"> 
             <div class="texto-chef">
@@ -253,7 +253,7 @@
         </div>
     </section>
 
-    <div class="formulario-contacto contenedor">
+    <div class="formulario-contacto contenedor" id="contacto">
         <div class="informacion-contacto">
             <h3>Contactanos</h3>
             <p><i class="bi bi-geo-alt-fill"></i> Av. Belaunde 249 Comas</p>

@@ -11,6 +11,7 @@
 html {
     box-sizing: border-box;
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -147,6 +148,12 @@ h3, p, a{
     z-index: 5;
 }
 
+
+.menu {
+    padding-top: 5rem;
+}
+
+
 .menu-fixed {
     position: fixed;
     top: 0;
@@ -260,7 +267,7 @@ video{
 }
 
 .contenedor-nosotros{
-    padding-top: 5rem;
+    padding-top: 10rem;
 }
 
 @media(min-width: 768px){
@@ -453,6 +460,7 @@ video{
 /*seccion del chef*/
 
 .chef{
+    padding-top: 7rem;
     margin-bottom: 3rem;
 }
 
@@ -484,7 +492,7 @@ video{
 }
 
 .formulario-contacto{
-    padding-top: 5rem;
+    padding-top: 10rem;
 }
 /*formulario y contacto*/
 
