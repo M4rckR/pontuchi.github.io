@@ -32,6 +32,7 @@ img{
     width: 95%;
 }
 
+
 .verde{
     color: var(--verde);
 }
@@ -64,6 +65,7 @@ img{
     z-index: 4;
 }
 
+
 @keyframes desplazamiento {
     0%{
         transform: translateX(100%);
@@ -94,6 +96,7 @@ h3, p, a{
     border-radius: 5px;
     transition: all .3s ease-in-out;
 }
+
 
 @media(min-width: 768px){
     .btn{
@@ -144,10 +147,18 @@ h3, p, a{
     z-index: 5;
 }
 
+.menu-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000;
+}
+
 .contenido-navegacion{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between; 
 }
 
 .logo h2,
@@ -219,6 +230,7 @@ h3, p, a{
     background-color: rgba(0, 0, 0, .5);
 }
 
+
 .texto-encabezado{
     position: absolute;
     z-index: 2;
@@ -228,6 +240,7 @@ h3, p, a{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 
 .texto-encabezado h2{

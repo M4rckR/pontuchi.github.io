@@ -24,6 +24,7 @@ const abrirMenu = () => {
 const botonCerrar = () => {
     const btnCerrar = document.createElement('p')
     const overlay = document.createElement('div')
+    // const overlay = document.querySelector('body')
     overlay.classList.add('pantalla-completa');
     const body = document.querySelector('body')
     if(document.querySelectorAll('.pantalla-completa').length> 0) return;
