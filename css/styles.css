@@ -267,7 +267,7 @@ video{
 }
 
 .contenedor-nosotros{
-    padding-top: 10rem;
+    padding-top: 15rem;
 }
 
 @media(min-width: 768px){
@@ -278,7 +278,7 @@ video{
 }
 
 .texto-nosotros, .imagenes-nosotros{
-    flex: 0 0 calc(50% - 1rem);
+    flex: 0 0 calc(50% - 4rem);
 }
 
 .texto-nosotros .bienvenido{
@@ -296,6 +296,7 @@ video{
 .texto-nosotros h1{
     font-size: 5rem;
     text-align: center;
+    margin: 0;
 }
 
 @media(min-width: 768px){
@@ -633,4 +634,142 @@ video{
     color: var(--blanco);
     padding: 2rem;
     font-size: 2rem;
+}
+
+
+.boton-inicio a {
+    text-decoration: none;
+    color: initial;
+    padding: 1rem 2rem;
+    background-color: white;
+    border-radius: 10px;
+    border: 2px solid black;
+    transition: all .4s;
+    font-weight: bold;
+}
+
+.boton-inicio a:hover {
+    border: 2px solid white;
+    color: white;
+    background-color: rgb(68, 67, 67);
+}
+
+.nosotros {
+    margin: 10rem 0;
+    padding: 5rem 0;
+    background-color: rgb(139, 60, 60);
+}
+
+.nosotros__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    width: 30%;
+    padding: 4rem 2rem;
+}
+
+.card__text {
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.card__text h3{
+    margin: 0;
+    font-size: 4rem;
+}
+
+
+
+.card:nth-child(1)  {  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(22, 14%, 54%, 0.6), hsla(23, 43%, 8%, 0.6)),url(/assets/imgNosotros/sabor.webp);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(21, 14%, 54%, 0.6), hsla(23, 43%, 8%, 0.6)),url(/assets/imgNosotros/sabor.webp); 
+    background-repeat: no-repeat;  
+    background-position: center center;
+    background-size: cover;
+    border-radius: 1.5rem;
+    transition: all 0.4s;
+}
+.card:nth-child(1):hover  {
+    transform: scale(1.10);
+}
+
+
+.card:nth-child(2)  {
+    background: -webkit-linear-gradient(to right, hsla(22, 14%, 54%, 0.6), hsla(23, 43%, 8%, 0.6)),url(/assets/imgNosotros/calidad.webp);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(21, 14%, 54%, 0.6), hsla(23, 43%, 8%, 0.6)),url(/assets/imgNosotros/calidad.webp); 
+    background-repeat: no-repeat;  
+    background-position: center center;
+    background-size: cover;
+    border-radius: 1.5rem;
+    transition: all 0.4s;
+}
+
+.card:nth-child(2):hover  {
+    transform: scale(1.10);
+}
+
+.card:nth-child(3)  {
+    background: -webkit-linear-gradient(to right, hsla(22, 14%, 54%, 0.6), hsla(23, 43%, 8%, 0.6)),url(/assets/imgNosotros/experiencia.webp);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(21, 14%, 54%, 0.6), hsla(23, 43%, 8%, 0.6)),url(/assets/imgNosotros/experiencia.webp); 
+    background-repeat: no-repeat;  
+    background-position: center center;
+    background-size: cover;
+    border-radius: 1.5rem;
+    transition: all 0.4s;
+}
+.card:nth-child(3):hover  {
+    transform: scale(1.10);
+}
+
+.nosotros > h2 {
+    text-align: center;
+    margin: 2rem 0 4rem 0;
+    font-size: 5rem;
+    color: #FFF;
+}
+
+.misionVision {
+    margin: 15rem 0;
+}    
+
+.misionVision___item {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.misionVision__contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10rem;
+}
+
+
+.misionVision___text {
+    width: calc(50% - 5rem);
+}
+
+.misionVision___text h3 {
+    font-size: 4rem;
+}
+.misionVision___text p {
+    font-size: 1.8rem;
+}
+
+.misionVision___img {
+    width: calc(40% - 5rem);
+}
+
+.misionVision___text--revez {
+    order: 1;
+}
+
+.misionVision___img--revez {
+    order: 0;
 }
