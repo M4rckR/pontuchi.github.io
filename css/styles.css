@@ -11,6 +11,11 @@
 html {
     box-sizing: border-box;
     font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
 }
 
 body{
@@ -32,6 +37,7 @@ img{
     width: 95%;
 }
 
+
 .verde{
     color: var(--verde);
 }
@@ -52,16 +58,6 @@ img{
     top: 0;
     right: 50px;
     user-select: none;
-}
-
-.pantalla-completa{
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, .5);
-    z-index: 4;
 }
 
 @keyframes desplazamiento {
@@ -94,6 +90,7 @@ h3, p, a{
     border-radius: 5px;
     transition: all .3s ease-in-out;
 }
+
 
 @media(min-width: 768px){
     .btn{
@@ -144,7 +141,13 @@ h3, p, a{
     z-index: 5;
 }
 
-.menu-fixed{
+
+.menu {
+    padding-top: 5rem;
+}
+
+
+.menu-fixed {
     position: fixed;
     top: 0;
     left: 0;
@@ -155,7 +158,11 @@ h3, p, a{
 .contenido-navegacion{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between; 
+}
+
+.logo{
+    cursor: pointer;
 }
 
 .logo h2,
@@ -201,6 +208,18 @@ h3, p, a{
     animation: desplazamiento .5s ease-in-out;
 }
 
+#login{
+    margin-top: 2rem;
+    border: 2px solid #fff;
+    font-weight: bold;
+    transition: all .5s;
+}
+
+#login:hover{
+    background-color: #fff;
+    color: #000;
+}
+
 .hamburguesa{
     cursor: pointer;
 }
@@ -227,6 +246,7 @@ h3, p, a{
     background-color: rgba(0, 0, 0, .5);
 }
 
+
 .texto-encabezado{
     position: absolute;
     z-index: 2;
@@ -236,6 +256,7 @@ h3, p, a{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 
 .texto-encabezado h2{
@@ -255,7 +276,7 @@ video{
 }
 
 .contenedor-nosotros{
-    padding-top: 5rem;
+    padding-top: 15rem;
 }
 
 @media(min-width: 768px){
@@ -266,7 +287,7 @@ video{
 }
 
 .texto-nosotros, .imagenes-nosotros{
-    flex: 0 0 calc(50% - 1rem);
+    flex: 0 0 calc(50% - 4rem);
 }
 
 .texto-nosotros .bienvenido{
@@ -284,6 +305,7 @@ video{
 .texto-nosotros h1{
     font-size: 5rem;
     text-align: center;
+    margin: 0;
 }
 
 @media(min-width: 768px){
@@ -448,6 +470,7 @@ video{
 /*seccion del chef*/
 
 .chef{
+    padding-top: 7rem;
     margin-bottom: 3rem;
 }
 
@@ -467,7 +490,7 @@ video{
 }
 
 .texto-chef, .imagen-chef{
-    flex: 0 0 calc(50% - 1rem);
+    flex: 0 0 calc(50% - 5rem);
 }
 
 .texto-chef h3{
@@ -479,7 +502,7 @@ video{
 }
 
 .formulario-contacto{
-    padding-top: 5rem;
+    padding-top: 10rem;
 }
 /*formulario y contacto*/
 
@@ -621,3 +644,120 @@ video{
     padding: 2rem;
     font-size: 2rem;
 }
+
+.nosotros{
+    margin: 10rem 0;
+    padding: 5rem 0;
+    background-color: rgb(139, 60, 60);
+}
+
+.nosotros__container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card{
+    width: 30%;
+    padding: 4rem 2rem;
+}
+
+.card__text{
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.card__text h3{
+    font-size: 4rem;
+    margin: 0;
+}
+
+.card:nth-child(1){
+    background: -webkit-linear-gradient(to right, hsla(21, 14%, 54%, 0.603), hsla(23, 43%, 8%, 0.637)), url(/assets/imgNosotros/sabor.webp) ;
+    background: linear-gradient(to right, hsla(21, 14%, 54%, 0.623), hsla(23, 43%, 8%, 0.616)), url(/assets/imgNosotros/sabor.webp);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 1.5rem;
+    transition: all 0.4s;
+}
+
+.card:nth-child(1):hover {
+    transform: scale(1.10);
+}
+
+.card:nth-child(2){
+    background: -webkit-linear-gradient(to right, hsla(21, 14%, 54%, 0.603), hsla(23, 43%, 8%, 0.637)), url(/assets/imgNosotros/calidad.webp);
+    background: linear-gradient(to right, hsla(21, 14%, 54%, 0.623), hsla(23, 43%, 8%, 0.616)), url(/assets/imgNosotros/calidad.webp);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 1.5rem;
+    transition: all 0.4s;
+}
+
+.card:nth-child(2):hover {
+    transform: scale(1.10);
+}
+
+.card:nth-child(3){
+    background: -webkit-linear-gradient(to right, hsla(21, 14%, 54%, 0.603), hsla(23, 43%, 8%, 0.637)), url(/assets/imgNosotros/experiencia.webp);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(21, 14%, 54%, 0.623), hsla(23, 43%, 8%, 0.616)), url(/assets/imgNosotros/experiencia.webp); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 1.5rem;
+    transition: all 0.4s;
+}
+
+.card:nth-child(3):hover {
+    transform: scale(1.10);
+}
+
+.nosotros > h2{
+    text-align: center;
+    margin: 2rem 0 4rem 0;
+    font-size: 5rem;
+    color: #fff;
+}
+
+.misionVision{
+    margin: 15rem 0;
+}
+
+.misionVision__item{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 12rem;
+}
+
+.misionvision__contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10rem;
+}
+
+.misionVision__text{
+    width: calc(50% - 5rem);
+}
+
+.misionVision__text h3{
+    font-size: 4rem;
+}
+
+.misionVision__img{
+    width: calc(40% - 5rem);
+}
+
+.misionVision__text--revez{
+    order: 1;
+}
+
+.misionVision__img--revez{
+    order: 0;
+}
+
