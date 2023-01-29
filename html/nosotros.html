@@ -18,11 +18,24 @@
                     <div class="contenido-navegacion contenedor">
 
                         <div class="logo">
-                            <h2>CHIFA <span class="rojo">PON</span> <span class="verde">TU</span> </h2>
+                            <a href="/index.html">
+                                <h2>CHIFA <span class="rojo">PON</span> <span class="verde">TU</span> </h2>
+                            </a>
+
                         </div>
                         
-                        <div class="boton-inicio">
-                            <a href="/index.html">Inicio</a>
+                        <nav class="navegacion ocultar">
+                            <a href="#historia">Historia</a>
+                            <a href="#sobre-nosotros">Sobre nosotros</a>
+                            <a href="#mision">Mision</a>
+                            <a href="#vision">Vision</a>
+                            <a id="login" href="#">Iniciar Sesión</a>
+                        </nav>
+    
+                        <div class="hamburguesa">
+                            <span></span>
+                            <span></span>
+                            <span></span>
                         </div>
 
                     </div>
@@ -31,7 +44,7 @@
             </div>
         </header>
         
-        <div class="contenedor-nosotros contenedor" id="nosotros">
+        <div class="contenedor-nosotros contenedor" id="historia">
             <div class="texto-nosotros">
                 <p class="bienvenido">Bienvenido</p>
                 <h1>Chifa Pon Tu</h1>
@@ -54,7 +67,9 @@
             </div>
         </div>
 
-        <div class="nosotros">
+        <div class="sobre-nosotros-ancla" id="sobre-nosotros"></div>
+
+        <div class="nosotros" >
             <h2>Nosotros</h2>
             <div class="nosotros__container contenedor">
                 <div class="card">
@@ -80,7 +95,7 @@
 
         <div class="misionVision">
             <div class="misionVision__contenedor contenedor">
-                <article class="misionVision___item">
+                <article class="misionVision___item" id="mision">
 
                     <div class="misionVision___text">
                         <h3>Mision</h3>
@@ -92,7 +107,7 @@
                     </picture>
                 </article>
 
-                <article class="misionVision___item">
+                <article class="misionVision___item" id="vision">
 
                     <div class="misionVision___text misionVision___text--revez">
                         <h3>Vision</h3>

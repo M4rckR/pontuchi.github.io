@@ -14,6 +14,10 @@ html {
     scroll-behavior: smooth;
 }
 
+a {
+    text-decoration: none;
+}
+
 body{
     font-size: 1.6rem;
     overflow-x: hidden;
@@ -56,15 +60,6 @@ img{
     user-select: none;
 }
 
-.pantalla-completa{
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, .5);
-    z-index: 4;
-}
 
 
 @keyframes desplazamiento {
@@ -168,6 +163,10 @@ h3, p, a{
     justify-content: space-between; 
 }
 
+.logo {
+    cursor: pointer;
+}
+
 .logo h2,
 .navegacion a{
     color: var(--blanco);
@@ -199,6 +198,8 @@ h3, p, a{
     margin-top: 5rem;
 }
 
+
+
 .navegacion{
     position: absolute;
     top: 0;
@@ -209,6 +210,19 @@ h3, p, a{
     padding: 3rem 4rem;
     background-color: var(--oscuro);
     animation: desplazamiento .5s ease-in-out;
+}
+
+
+#login {
+    margin-top: 2rem;
+    border: 2px solid white;
+    font-weight: bold;
+    transition: all .5s;
+}
+
+#login:hover {
+    background-color: white;
+    color:black
 }
 
 .hamburguesa{
@@ -481,7 +495,7 @@ video{
 }
 
 .texto-chef, .imagen-chef{
-    flex: 0 0 calc(50% - 1rem);
+    flex: 0 0 calc(50% - 5rem);
 }
 
 .texto-chef h3{
@@ -637,22 +651,6 @@ video{
 }
 
 
-.boton-inicio a {
-    text-decoration: none;
-    color: initial;
-    padding: 1rem 2rem;
-    background-color: white;
-    border-radius: 10px;
-    border: 2px solid black;
-    transition: all .4s;
-    font-weight: bold;
-}
-
-.boton-inicio a:hover {
-    border: 2px solid white;
-    color: white;
-    background-color: rgb(68, 67, 67);
-}
 
 .nosotros {
     margin: 10rem 0;
@@ -742,6 +740,7 @@ video{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 12rem;
 }
 
 .misionVision__contenedor {
