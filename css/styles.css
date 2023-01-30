@@ -684,8 +684,8 @@ video{
 
 
 .card:nth-child(1)  {  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, hsla(22, 14%, 54%, 0.6), hsla(23, 43%, 8%, 0.6)),url(/assets/imgNosotros/sabor.webp);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, hsla(21, 14%, 54%, 0.6), hsla(23, 43%, 8%, 0.6)),url(/assets/imgNosotros/sabor.webp); 
+    background: -webkit-linear-gradient(to right, hsla(22, 14%, 54%, 0.6), hsla(23, 43%, 8%, 0.6)),url(../assets/imgNosotros/sabor.webp);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(21, 14%, 54%, 0.6), hsla(23, 43%, 8%, 0.6)),url(../assets/imgNosotros/sabor.webp); 
     background-repeat: no-repeat;  
     background-position: center center;
     background-size: cover;
@@ -698,8 +698,8 @@ video{
 
 
 .card:nth-child(2)  {
-    background: -webkit-linear-gradient(to right, hsla(22, 14%, 54%, 0.6), hsla(23, 43%, 8%, 0.6)),url(/assets/imgNosotros/calidad.webp);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, hsla(21, 14%, 54%, 0.6), hsla(23, 43%, 8%, 0.6)),url(/assets/imgNosotros/calidad.webp); 
+    background: -webkit-linear-gradient(to right, hsla(22, 14%, 54%, 0.6), hsla(23, 43%, 8%, 0.6)),url(../assets/imgNosotros/calidad.webp);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(21, 14%, 54%, 0.6), hsla(23, 43%, 8%, 0.6)),url(../assets/imgNosotros/calidad.webp); 
     background-repeat: no-repeat;  
     background-position: center center;
     background-size: cover;
@@ -712,8 +712,8 @@ video{
 }
 
 .card:nth-child(3)  {
-    background: -webkit-linear-gradient(to right, hsla(22, 14%, 54%, 0.6), hsla(23, 43%, 8%, 0.6)),url(/assets/imgNosotros/experiencia.webp);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, hsla(21, 14%, 54%, 0.6), hsla(23, 43%, 8%, 0.6)),url(/assets/imgNosotros/experiencia.webp); 
+    background: -webkit-linear-gradient(to right, hsla(22, 14%, 54%, 0.6), hsla(23, 43%, 8%, 0.6)),url(../assets/imgNosotros/experiencia.webp);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(21, 14%, 54%, 0.6), hsla(23, 43%, 8%, 0.6)),url(../assets/imgNosotros/experiencia.webp); 
     background-repeat: no-repeat;  
     background-position: center center;
     background-size: cover;
