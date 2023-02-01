@@ -12,6 +12,32 @@
     <link rel="icon" href="assets/icon/icon.png">
 </head>
 <body>
+    <div class="modal hidden">
+        <div class="modal__login">
+            <div class="modal__info">
+                <div class="modal__title">
+                    <h3>Bienvenido Administrador</h3>
+                </div>
+                <div class="modal__paragraph">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde perspiciatis eveniet non repellendus veritatis nihil eaque saepe ad reprehenderit adipisci et voluptate optio, natus necessitatibus, accusamus architecto? Sunt, dicta earum.</p>
+                </div>
+            </div>
+            <div class="modal__form">
+                <button class="close-modal">&times;</button>
+                <div class="modal__title2">
+                    <h3>Ingreso</h3>
+                </div>
+                <form class="modal__inputs">
+                    <input id="usuario" type="text" placeholder="Usuario" required>
+                    <input id="pass" type="password" placeholder="Contraseña" required>
+                </form>
+                <div class="modal__btn">
+                    <a href="#">Ingresar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <header class="encabezado" id="inicio">
         <div class="contenedor-navegacion">
             <div class="menu-fixed">
@@ -27,7 +53,7 @@
                         <a href="#menu">Menú</a>
                         <a href="#chef">Chef</a>
                         <a href="#contacto">Contacto</a>
-                        <a id="login" href="#">Iniciar Sesión</a>
+                        <a class="start-login" id="login" href="#">Iniciar Sesión</a>
     
                     </nav>
                     <div class="hamburguesa">
@@ -238,7 +264,7 @@
     </div>
 
     <section class="chef contenedor" id="chef">
-       <h2>  Chef Principal  </h2>
+    <h2>  Chef Principal  </h2>
         <div class="contenido-chef"> 
             <div class="texto-chef">
                 <h3>Comenzando a cocinar hace más de 20 años, Guido Alberto Lau Santiago aprendió con pasión el secreto de la cocina de Asia Oriental. </h3>

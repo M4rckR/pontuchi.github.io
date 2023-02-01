@@ -7,6 +7,10 @@ const btnPasta = document.querySelector('.pasta')
 const btnPizza = document.querySelector('.pizza')
 const btnPostres = document.querySelector('.postres')
 const contenedorPlatillos = document.querySelector('.platillos')
+//////////////////////////////////////////////////////////////////
+const inciarSesion = document.querySelector('.start-login')
+const closeModal = document.querySelector('.close-modal')
+const modal = document.querySelector('.modal')
 
 document.addEventListener('DOMContentLoaded', ()=> {
     eventos();
@@ -31,10 +35,6 @@ const botonCerrar = () => {
     body.appendChild(overlay)
     btnCerrar.textContent = 'x'
     btnCerrar.classList.add('btn-cerrar')
-
-    // while(navegacion.children[5]) {
-    //     navegacion.removeChild(navegacion.children[5])
-    // }
 
     navegacion.appendChild(btnCerrar);
     cerrarMenu(btnCerrar, overlay)
@@ -116,4 +116,25 @@ const limpiarHtml = (contenedor) => {
         contenedor.removeChild(contenedor.firstChild);
     }
 }
+
+inciarSesion.addEventListener('click',() => {
+    modal.classList.add('blur')
+    modal.classList.remove('hidden');
+    navegacion.classList.add('ocultar')
+    overlay.remove();
+    boton.remove();
+})
+
+
+closeModal.addEventListener('click', () => {
+    modal.classList.add('hidden')
+})
+
+document.addEventListener('keydown', (e) => {
+    if(e.key === 'Escape') {
+        if(!modal.classList.contains('hidden')) {
+            modal.classList.add('hidden')
+        }
+    }
+})
 

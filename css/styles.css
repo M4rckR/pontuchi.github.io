@@ -14,6 +14,11 @@ html {
     scroll-behavior: smooth;
 }
 
+*,*::after,*::before {
+    box-sizing: inherit;
+}
+
+
 a {
     text-decoration: none;
 }
@@ -21,14 +26,145 @@ a {
 body{
     font-size: 1.6rem;
     overflow-x: hidden;
-}
-
-*,*::after,*::before {
-    box-sizing: inherit;
+    position: relative;
 }
 
 img{
     max-width: 100%;
+}
+
+.blur {
+    backdrop-filter: blur(.2rem);
+}
+
+.close-modal {
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    font-size: 5rem;
+    color: #FFF;
+    cursor: pointer;
+    border: none;
+    background: none;
+    font-weight: bold;
+}
+
+.modal {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color:  #0000007a;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal__login h3 {
+    margin: 0;
+}
+
+.modal__login {
+    background-image: url(../assets/img/fondo.webp);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: cover;
+    width: 90rem;
+    height: 50rem;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    border-radius: 25px;
+}
+
+.modal__info {
+    grid-column: 1/8;
+    align-self: end;
+    color: white;
+    padding: 6rem 4rem;
+}
+
+.modal__form {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    grid-column: 8/-1;
+    align-self: center;
+    padding: 0 4rem;
+    color: white;
+    background-color: #16203b6e;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+    backdrop-filter: blur(1rem);
+    border-radius:  0 25px 25px 0;
+}
+
+.modal__title2 h3{
+    font-size: 3rem;
+    font-family: var(--titulos);
+}
+
+.modal__inputs input {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-family: var(--parrafos);
+    padding: .5rem 1rem;
+    margin-bottom: 2rem;
+    background: transparent;
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+.modal__btn a{
+    border: 1px solid white;
+    background-color: rgba(0, 0, 0, 0.444);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    transition: all .3s;
+}
+
+.modal__btn a:hover {
+    background-color: white;
+    color: #000;
+}
+
+@media (max-width:768px) {
+    .modal__login {
+        height: 55rem;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .modal__info {
+        padding: 4rem 2rem;
+        flex: 1;
+        height: 20rem;
+        text-align: center;
+        display: none;
+    }
+
+    .modal__form {
+        border-radius: 25px ;
+    }
+}
+
+@media (max-width:375px) {
+    .modal__login {
+        height: 55rem;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+
+.hidden {
+    display: none;
 }
 
 .contenedor{
@@ -772,3 +908,4 @@ video{
 .misionVision___img--revez {
     order: 0;
 }
+
