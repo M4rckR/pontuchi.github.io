@@ -133,7 +133,7 @@ img{
 
 @media (max-width:768px) {
     .modal__login {
-        height: 55rem;
+        height: 40rem;
         width: 80%;
         display: flex;
         flex-direction: column;
@@ -860,6 +860,18 @@ video{
     transform: scale(1.10);
 }
 
+@media (max-width: 850px) {
+    .card {
+        width: 90%;
+        margin-bottom: 4rem;
+    }
+
+    .nosotros__container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
 .nosotros > h2 {
     text-align: center;
     margin: 2rem 0 4rem 0;
@@ -907,5 +919,62 @@ video{
 
 .misionVision___img--revez {
     order: 0;
+}
+
+
+@media (max-width: 768px) {
+
+
+    .contenido-header::before {
+        height: 26rem;
+    }
+
+    video {
+        height: 30rem;
+    }
+
+    .misionVision {
+        margin: 4rem 0;
+    }
+
+    .nosotros {
+        margin: 0;
+    }
+
+    .contenedor-nosotros {
+        padding: 1rem 0;
+    }
+
+    .contenedor-nosotros--nosotros {
+        padding: 10rem 0;
+    }
+
+    .misionVision___text,
+    .misionVision___img {
+        width: 90%;
+    }
+
+    .misionVision___text {
+        margin-bottom: 2rem;
+    }
+
+    .misionVision___img {
+        width: 70%;
+    }
+
+    .misionVision___item {
+        flex-wrap: wrap;
+        padding: 0;
+        justify-content: center;
+    }
+
+    .misionVision___text--revez{ 
+        order: 0;
+    }
+
+    .misionVision___img--revez{
+        order: 1;
+    }
+
 }
 
